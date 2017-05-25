@@ -1,0 +1,17 @@
+{
+  "name": "tmsf-service-seed",
+  "version": "0.0.1",
+  "description": "a microservice seed project using tmsf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'no tests at the moment'",
+    "start": "node ./",
+    "start:dev": "node ./",
+    "start:prod": "NODE_ENV=production node ./"
+  },
+  "author": "Wolfgang Beer <wolfgang.appdev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tmsf": "0.0.1"
+  }
+}

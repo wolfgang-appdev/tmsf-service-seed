@@ -12,6 +12,6 @@
   "author": "Wolfgang Beer <wolfgang.appdev@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "tmsf": "0.0.1"
+    "tmsf": "0.0.2"
   }
 }

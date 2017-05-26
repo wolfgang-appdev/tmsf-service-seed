@@ -1,17 +1,20 @@
 {
   "name": "tmsf-service-seed",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a microservice seed project built upon tmsf",
   "main": "index.js",
   "scripts": {
     "test": "echo 'no tests at the moment'",
-    "start": "node ./",
-    "start:dev": "node ./",
-    "start:prod": "NODE_ENV=production node ./"
+    "start": "docker-compose up -d && node ./",
+    "clean": "docker-compose down && rm -rf node_modules/"
   },
   "author": "Wolfgang Beer <wolfgang.appdev@gmail.com>",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wolfgang-appdev/tmsf-service-seed.git"
+  },
   "license": "MIT",
   "dependencies": {
-    "tmsf": "0.0.2"
+    "tmsf": "0.0.3"
   }
 }

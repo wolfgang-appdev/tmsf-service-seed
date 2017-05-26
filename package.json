@@ -1,7 +1,7 @@
 {
   "name": "tmsf-service-seed",
-  "version": "0.0.2",
-  "description": "a microservice seed project using tmsf",
+  "version": "0.0.3",
+  "description": "a microservice seed project built upon tmsf",
   "main": "index.js",
   "scripts": {
     "test": "echo 'no tests at the moment'",

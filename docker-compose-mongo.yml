@@ -2,14 +2,15 @@ version: "3"
 services:
     mongo:
         image: mongo:3.4
+        container_name: mongodb
         ports:
             - "27017:27017"
         volumes:
             - /data/databases/mongo:/data/db
         networks:
-            - mongodev
+            - development
 
 
 networks:
-    mongodev:
+    development:
         driver: bridge

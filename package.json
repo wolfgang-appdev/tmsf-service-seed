@@ -1,6 +1,6 @@
 {
   "name": "tmsf-service-seed",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a microservice seed project built upon tmsf",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "start:mongo": "docker-compose -f docker-compose-mongo.yml up -d",
     "stop:mongo": "docker-compose -f docker-compose-mongo.yml down",
     "start:dev": "NODE_ENV=development node ./",
-    "start:prod": "NODE_ENV=production node ./"
+    "start:prod": "NODE_ENV=production node ./",
+    "start:docker": "docker-compose up -d",
+    "stop:docker": "docker-compose down"
   },
   "author": "Wolfgang Beer <wolfgang.appdev@gmail.com>",
   "repository": {

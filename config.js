@@ -8,7 +8,7 @@ module.exports = {
         router: router,
 
         endpoint: {
-            host: process.env.NODE_HOST || "0.0.0.0",
+            host: process.env.NODE_HOST || "localhost",
             port: process.env.NODE_PORT || 3000
         }
     },

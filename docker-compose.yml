@@ -1,0 +1,24 @@
+version: "3"
+services:
+    node:
+        build: ./
+        container_name: node-app
+        ports:
+            - "3000:3000"
+        volumes:
+            - /data/logs/node-app:/var/log/app
+        environment:
+            - NODE_ENV=production
+            - NODE_HOST=0.0.0.0
+            - NODE_PORT=3000
+            - MONGODB_HOST=mongodb
+            - MONGODB_PORT=27017
+            - MONGODB_NAME=test
+            - TOKEN_SECRET=super_duper_secret
+        networks:
+            - development
+
+
+networks:
+    development:
+        driver: bridge

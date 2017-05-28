@@ -1,6 +1,7 @@
 module.exports = (req, res, dependencies) => {
 
-    const { User } = dependencies.mongodb.getModels();
+    const { mongodb, logger } = dependencies;
+    const { User } = mongodb.getModels();
 
     const newUser = new User({
         email: "test@test.com",
@@ -8,7 +9,7 @@ module.exports = (req, res, dependencies) => {
     });
 
     newUser.save( (err) => {
-        if (err) console.log("error");
+        if (err) logger.error("some db error");
         return res.json({error: false});
     });
 

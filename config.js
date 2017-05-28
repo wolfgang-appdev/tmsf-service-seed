@@ -5,7 +5,6 @@ module.exports = {
 
     settings: {
         nodeEnv: process.env.NODE_ENV || "development",
-        tokenSecret: process.env.TOKEN_SECRET || "super_duper_secret",
         router: router,
 
         endpoint: {
@@ -20,6 +19,15 @@ module.exports = {
             port: process.env.MONGODB_PORT || 27017,
             name: process.env.MONGODB_NAME || "name",
             models: models
+        },
+
+        logger: {
+            folder: "/var/log/app",
+            file: "error.log"
+        },
+
+        authProvider: {
+            tokenSecret: process.env.TOKEN_SECRET || "super_duper_secret"
         }
     }
 

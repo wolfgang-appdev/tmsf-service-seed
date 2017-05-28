@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'no tests at the moment'",
-    "start": "docker-compose up -d && node ./",
-    "clean": "docker-compose down && rm -rf node_modules/"
+    "start": "NODE_ENV=development node ./",
+    "clean": "rm -rf node_modules/",
+    "start:mongo": "docker-compose -f docker-compose-mongo.yml up -d",
+    "stop:mongo": "docker-compose -f docker-compose-mongo.yml down",
+    "start:dev": "NODE_ENV=development node ./",
+    "start:prod": "NODE_ENV=production node ./"
   },
   "author": "Wolfgang Beer <wolfgang.appdev@gmail.com>",
   "repository": {
@@ -15,6 +19,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "tmsf": "0.0.3"
+    "tmsf": "0.0.6"
   }
 }

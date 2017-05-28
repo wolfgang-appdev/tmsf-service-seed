@@ -7,9 +7,9 @@ services:
         volumes:
             - /data/databases/mongo:/data/db
         networks:
-            - devdependencies
+            - mongodev
 
 
 networks:
-    devdependencies:
+    mongodev:
         driver: bridge

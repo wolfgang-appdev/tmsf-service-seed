@@ -23,7 +23,9 @@ module.exports = {
 
         logger: {
             folder: "/var/log/app",
-            file: "error.log"
+            errorLogFile: "error.log",
+            accessLogFile: "access.log",
+            logRequests: true
         },
 
         authProvider: {

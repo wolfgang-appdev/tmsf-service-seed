@@ -1,6 +1,6 @@
 module.exports = (req, res, next) => {
 
-    console.log("middleware called");
+    console.log("test middleware called");
     next();
 
 }

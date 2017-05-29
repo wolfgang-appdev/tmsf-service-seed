@@ -1,6 +1,6 @@
 {
   "name": "tmsf-service-seed",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "a microservice seed project built upon tmsf",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "tmsf": "0.0.8"
+    "tmsf": "0.0.9"
   }
 }
